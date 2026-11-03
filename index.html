@@ -1,175 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nur Nasira Binti Naser | Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nur Nasira Binti Naser | Personal Portfolio Resume Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header & Navigation Bar -->
-    <header class="header">
-        <a href="#home" class="logo-link">
-            <img src="logo.png" alt="NN Logo" class="logo-img">
-            <span class="logo-text">Nur Nasira</span>
-        </a>
-        <nav class="navbar" id="navbar">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">About Me</a>
-            <a href="#projects" class="nav-link">Projects & Activities</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </nav>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+<a href="#home" class="logo-link" aria-label="Nur Nasira - Return to Home">
+<!-- Header and Navigation -->
+    <header class="header" id="header">
+    <div class="nav-container">
+      <a href="#home" class="logo-link" aria-label="Nur Nasira - Return to Home">
+        <img src="newlogo.png" alt="NN Logo - Nur Nasira Personal Branding" class="nav-logo" />
+        <div class="logo-text">
+          <span class="brand-name">Nur Nasira</span>
+          <span class="brand-sub">Undergraduate Student</span>
+        </div>
+      </a>
+ 
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+ 
+      <nav class="primary-nav" id="primaryNav" aria-label="Main Navigation">
+        <ul class="nav-list">
+        <li><a href="#home" class="nav-link ">Home</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      
+        <div class="nav-actions">
+            <button id="themeToggle" class="icon-btn" aria-label="Toggle light and dark contrast theme">
+            <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </div>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="section home-section">
-        <div class="home-container">
-            <div class="home-content">
-                <span class="badge">Welcome to my personal portfolio website</span>
-                <h1>Nur Nasira Binti Naser</h1>
-                <p class="subtitle">Bachelor of Computer Science in Network Computing (Honours) at UNIMAS</p>
-                <p class="tagline">Demonstrating dedication, logical problem-solving, and continuous improvement in all work engagements.</p>
-                <div class="home-buttons">
-                    <a href="#projects" class="btn btn-primary">Explore My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-            <div class="home-image-wrapper">
-                <div class="image-frame">
-                    <img src="homepic.jpeg" alt="Nur Nasira Binti Naser" class="profile-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'250\' height=\'250\' viewBox=\'0 0 24 24\' fill=\'%235c061c\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'">
-                </div>
-            </div>
+ <!-- Homepage -->
+    <main id="main-content">
+    <section id="home" class="hero-section">
+      <div class="hero-welcome">
+        <!-- Decorative stickers -->
+        <div class="stickers" aria-hidden="true">
+          <span class="sticker round maroon s1" style="--r:-8deg">&lt;/&gt;</span>
+          <span class="sticker round pink s2" style="--r:10deg"><i class="fa-solid fa-wifi"></i></span>
+          <span class="sticker cream s3 hide-sm" style="--r:-5deg">&#9749; coffee.exe running</span>
+          <span class="sticker lav s4 hide-sm" style="--r:6deg">&gt;_ ping: 0% loss</span>
+          <span class="sticker round cream s5" style="--r:-10deg">&#129483;</span>
+          <span class="sticker pink s6 hide-sm" style="--r:5deg">404: sleep not found</span>
+          <span class="sticker maroon s7 hide-sm" style="--r:-4deg">git commit -m "life"</span>
         </div>
+ 
+        <p class="welcome-line">Welcome to my personal portfolio resume website</p>
+        <div class="name-wrap">
+          <span class="home-spark" aria-hidden="true"></span>
+          <h1 class="home-name">Nur Nasira Binti Naser</h1>
+          <span class="home-year">2026</span>
+        </div>
+      </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about" class="section about-section">
+<!-- About Me Section -->
+    <section id="about" class="about-section">
+    <div class="section-header">
+      <h2>About Me</h2>
+      <p>Academic journey, leadership experience, and background</p>
+    </div>
+ 
+  <div class="about-container">
+    <div class="about-intro">
+      <div class="home-content">
+        <span class="badge-tag"></i>Get To Know Me</span>
+        <h3 class="hero-title">Hi, I'm <span class="highlight-name">Nur Nasira Binti Naser</span></h3>
+ 
+        <div class="quick-details hero-details">
+          <p class="subtitle">Bachelor of Computer Science (Honours) in Network Computing, Faculty of Computer Science & Information Technology @ UNIMAS</p>
+          <p class="tagline">Specializing in network architecture, security protocols, and modern web applications.</p>
+        </div>
+ 
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Contact Me</span>
+            <i class="fa-regular fa-paper-plane"></i></a>
+        </div>
+      </div>
+ 
+      <div class="home-image-wrapper">
+        <div class="image-frame">
+          <img src="homepic.jpeg" alt="Nur Nasira Binti Naser" class="profile-img">
+          <div class="photo-overlay-card">
+            <span class="overlay-title">Network Computing</span>
+            <span class="overlay-sub">UNIMAS Student</span>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Top Box: Full Width Background -->
+    <div class="about-card full-width">
+      <h3 class="card-title">My Background</h3>
+      
+      <p class="bio-text">
+        I am pursuing a <strong>Bachelor of Computer Science (Honours) in Network Computing</strong> at <strong>Universiti Malaysia Sarawak (UNIMAS)</strong>. My passion lies at the intersection of network security, infrastructure engineering, and modern full-stack web application development.
+      </p>
+      
+      <p class="bio-text">
+        Beyond technical coursework, I have actively served in student council leadership roles, managing large-scale technical deployments, audio-visual networks, and institutional event planning with high precision.
+      </p>
+ 
+      <div class="quick-details">
+        <p><strong>Education:</strong></p>
+        <p>B.Comp.Sc (Hons.) Network Computing – Universiti Malaysia Sarawak (2024 – Present)</p>
+        <p>STPM – Social Science, Sekolah Menengah Kebangsaan Tarat (2022 – 2024)</p>
+        <p>SPM – Science Stream, Sekolah Menengah Kebangsaan Tarat (2017 – 2021)</p>
+ 
+        <p><strong>Location:</strong> Serian , Sarawak</p>
+        <p><strong>Languages:</strong> English, Malay</p>
+        <p><strong>Interests:</strong> Network Security, Web App Architecture, System Admin</p>
+      </div>
+    </div>
+ 
+    <!-- Bottom Box: Full Width Leadership & Activities -->
+    <div class="about-card full-width">
+      <h3 class="card-title">Activities & Leadership</h3>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="badge">2026</span>
+          <h4>Special Task Unit (FNB) – JKPMPP UNIMAS</h4>
+          <p>Overseeing official hospitality protocols, VIP food planning, and cross-departmental administrative operations for student council governance.</p>
+        </div>
+ 
+        <div class="timeline-item">
+          <span class="badge">2025</span>
+          <h4>Logistics & Technical Unit – JKPMPP UNIMAS</h4>
+          <p>Managed end-to-end technical AV setups and network infrastructure ensuring zero downtime during university-wide events.</p>
+        </div>
+ 
+        <div class="timeline-item">
+          <span class="badge">2025</span>
+          <h4>Secretary – Ringgit Smart School Programme</h4>
+          <p>Coordinated schedule planning, official correspondence, and documentation for financial literacy outreach workshops.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="section-container">
         <div class="section-header">
-            <h2>About Me</h2>
-            <p>Get to know my academic background, core values, and professional skill sets.</p>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Detailed breakdown of systems, security modules, and web applications</p>
         </div>
-        <div class="about-grid">
-            <a href="#about" class="about-card clickable-box" data-target="summary">
-                <div class="card-icon">📌</div>
-                <h3>Profile Summary</h3>
-                <p>Dedicated and professional network computing student with strong adaptability, leadership skills, and a passion for problem-solving and structured decision-making.</p>
-                <span class="card-link-text">Learn more &rarr;</span>
-            </a>
-            <a href="#about" class="about-card clickable-box" data-target="education">
-                <div class="card-icon">🎓</div>
-                <h3>Education & Standing</h3>
-                <ul>
-                    <li><strong>UNIMAS:</strong> Bachelor of Computer Science (Network Computing) (CGPA: 2.93)</li>
-                    <li><strong>STPM:</strong> SMK Tarat (CGPA: 2.42)</li>
-                    <li><strong>MUET:</strong> Band 3.5</li>
-                </ul>
-                <span class="card-link-text">View academic timeline &rarr;</span>
-            </a>
-            <a href="#about" class="about-card clickable-box" data-target="skills">
-                <div class="card-icon">💡</div>
-                <h3>Key Skills</h3>
-                <ul>
-                    <li><strong>Leadership & Guidance:</strong> Leading student teams.</li>
-                    <li><strong>Active Listening:</strong> Open to diverse perspectives.</li>
-                    <li><strong>Problem-Solving:</strong> Structured decision-making.</li>
-                    <li><strong>Conflict Resolution:</strong> Smooth dispute handling.</li>
-                </ul>
-                <span class="card-link-text">Explore capabilities &rarr;</span>
-            </a>
+
+        <!-- Dynamic Filter Controls -->
+        <div class="project-controls">
+          <div class="filter-buttons" role="tablist" aria-label="Project Categories">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+            <button class="filter-btn" data-filter="security" role="tab" aria-selected="false">Security & AI</button>
+            <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web Systems</button>
+            <button class="filter-btn" data-filter="architecture" role="tab" aria-selected="false">System Design</button>
+            <button class="filter-btn" data-filter="network" role="tab" aria-selected="false">Networking</button>
+          </div>
+
+          <div class="search-box">
+            <input type="text" id="projectSearch" placeholder="Search projects " aria-label="Search projects" />
+          </div>
         </div>
-    </section>
 
-    <!-- Projects & Activities Section -->
-    <section id="projects" class="section projects-section">
-        <div class="section-header">
-            <h2>Projects & Leadership Activities</h2>
-            <p>Showcasing academic leadership, technical event operations, and community involvement.</p>
-        </div>
-        
-        <div class="projects-grid">
-            <a href="#contact" class="project-card clickable-box">
-                <div class="project-number">01</div>
-                <h3>Ringgit Smart School Programme</h3>
-                <p class="role-tag">Secretary (2025)</p>
-                <p>Coordinated administrative tasks, schedule planning, and documentation for financial literacy initiative workshops.</p>
-                <span class="card-link-text">Inquire about this &rarr;</span>
-            </a>
-
-            <a href="#contact" class="project-card clickable-box">
-                <div class="project-number">02</div>
-                <h3>Student Council Committee</h3>
-                <p class="role-tag">Logistics & Technical Unit (2025)</p>
-                <p>Managed end-to-end technical setups, AV systems, stage lighting, network infrastructure, and real-time troubleshooting.</p>
-                <span class="card-link-text">Inquire about this &rarr;</span>
-            </a>
-
-            <a href="#contact" class="project-card clickable-box">
-                <div class="project-number">03</div>
-                <h3>SMK Tarat Form 6 Leadership</h3>
-                <p class="role-tag">Deputy Head of Exco (2022 - 2023)</p>
-                <p>Organized student development programs, community guidance, and served as Secretary for the Netball Club.</p>
-                <span class="card-link-text">Inquire about this &rarr;</span>
-            </a>
-
-            <a href="#contact" class="project-card clickable-box">
-                <div class="project-number">04</div>
-                <h3>Police Uniform Unit & Camps</h3>
-                <p class="role-tag">Committee Member & Facilitator (2022 - 2023)</p>
-                <p>Assisted in weekly drill trainings, safety workshops, and acted as student facilitator for leadership camps.</p>
-                <span class="card-link-text">Inquire about this &rarr;</span>
-            </a>
-
-            <a href="#contact" class="project-card clickable-box">
-                <div class="project-number">05</div>
-                <h3>Network Computing Studies</h3>
-                <p class="role-tag">Undergraduate at UNIMAS (2024 - Now)</p>
-                <p>Pursuing computer science core principles, systems administration foundations, and network infrastructure setups.</p>
-                <span class="card-link-text">Inquire about this &rarr;</span>
-            </a>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-        <div class="section-header">
-            <h2>Contact Me</h2>
-            <p>Get in touch for professional opportunities, collaborations, or inquiries.</p>
-        </div>
-        
-        <div class="contact-wrapper">
-            <div class="contact-info-card">
-                <h3>Direct Inquiries</h3>
-                <p><strong>Address:</strong> 
-                    <a href="https://www.google.com/maps/search/?api=1&query=No.7+Taman+Empire+Height+94700+Serian+Sarawak" target="_blank" class="contact-link">
-                        No.7, Taman Empire Height, 94700 Serian, Sarawak</a>
-                </p>
-                <p><strong>Email:</strong> 
-                    <a href="mailto:nurnasiranaser@gmail.com" class="contact-link">nurnasiranaser@gmail.com</a>
-                </p>
-                <p><strong>Phone:</strong> 
-                    <a href="tel:01151790191" class="contact-link">011-5179 0191</a>
-                </p>
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1 -->
+          <article class="project-card" data-category="security" data-keywords="mfa python flask security ml multi factor authentication">
+            <div class="card-badge">Security & AI</div>
+            <h3 class="project-title">AI-Enhanced Multi-Factor Authentication (MFA) System</h3>
+            <p class="project-desc">An intelligent MFA prototype built with Flask and Python that analyzes user behavior patterns and detects suspicious login attempts to prevent brute-force attacks.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Security</span>
+              <span class="tech-tag">Machine Learning</span>
             </div>
+            <div class="card-actions">
+              <button class="btn btn-sm btn-primary view-details-btn" data-project="0">View Details</button>
+            </div>
+          </article>
 
-            <form id="contactForm" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" required placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" required placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="4" required placeholder="Type your message here..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary full-width">Send Message</button>
-                <p id="formFeedback" class="form-feedback"></p>
-            </form>
+          <!-- Project 2 -->
+          <article class="project-card" data-category="architecture" data-keywords="campusgo scooter uml oosd unimas system architecture java">
+            <div class="card-badge">System Design</div>
+            <h3 class="project-title">CampusGo Smart E-Scooter System Architecture</h3>
+            <p class="project-desc">Comprehensive Object-Oriented Analysis & Design modeling for an IoT e-scooter sharing platform on campus, featuring full UML use case and sequence diagrams.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">UML</span>
+              <span class="tech-tag">OOSD</span>
+              <span class="tech-tag">System Design</span>
+              <span class="tech-tag">IoT Concept</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-sm btn-primary view-details-btn" data-project="1">View Details</button>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="web" data-keywords="volterra dashboard automotive vehicle ui figma javascript">
+            <div class="card-badge">Web Systems / HCI</div>
+            <h3 class="project-title">Volterra X1 Smart EV Dashboard Interface</h3>
+            <p class="project-desc">High-responsiveness digital automotive instrument cluster engineered for vehicle safety on long routes like the Pan Borneo highway, built with HTML/CSS/JS and HCI principles.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HCI</span>
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">CSS Grid</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-sm btn-primary view-details-btn" data-project="2">View Details</button>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" data-category="network" data-keywords="5g private network deployment terminal miri sarawak TCP/IP DNS">
+            <div class="card-badge">Networking</div>
+            <h3 class="project-title">Private 5G Network Infrastructure Deployment Model</h3>
+            <p class="project-desc">An enterprise networking case study evaluating private 5G deployment architectures (Self-managed vs Hybrid vs Fully Managed) for industrial maritime terminals.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Private 5G</span>
+              <span class="tech-tag">TCP/IP</span>
+              <span class="tech-tag">Network Admin</span>
+              <span class="tech-tag">Cisco Packet Tracer</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-sm btn-primary view-details-btn" data-project="3">View Details</button>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card" data-category="web" data-keywords="academic planner web application localstorage html css js">
+            <div class="card-badge">Web Systems</div>
+            <h3 class="project-title">Student Coursework Planner</h3>
+            <p class="project-desc">A dynamic web app tailored for students to manage coursework deadlines, exam countdowns, and schedule priorities with persistent local storage.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">JavaScript ES6</span>
+              <span class="tech-tag">LocalStorage API</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS Flexbox</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-sm btn-primary view-details-btn" data-project="4">View Details</button>
+            </div>
+          </article>
         </div>
+      </div>
+
+      <!-- Modal Window for Project Details -->
+        <div class="modal" id="projectModal" hidden>
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+                <h3 id="modalTitle" style="color: var(--maroon-primary); margin-bottom: 1rem; font-size: 1.4rem;">Project Title</h3>
+        <div id="modalBody">
+        <!-- Dynamic content injected by JavaScript -->
+        </div>
+        </div>
+        </div>
+    <script src="script.js"></script>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">Core languages, network tools, and security knowledge</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-meter">
+              <div class="skill-info"><span>Python</span><span>88%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-meter">
+              <div class="skill-info"><span>PHP & HTML5/CSS3</span><span>90%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-meter">
+              <div class="skill-info"><span>C++ & Java</span><span>80%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-meter">
+              <div class="skill-info"><span>SQL & JavaScript</span><span>85%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
+            
+          <div class="skill-category">
+            <h3>Network & Infrastructure</h3>
+            <div class="skill-badges">
+                <span class="skill-chip">TCP/IP</span>
+                <span class="skill-chip">DNS Configuration</span>
+                <span class="skill-chip">HTTP/HTTPS Protocols</span>
+                <span class="skill-chip">Flask Backend</span>
+                <span class="skill-chip">Linux Administration</span>
+                <span class="skill-chip">Google Cloud Platform</span>
+                <span class="skill-chip">Git & GitHub</span>
+                <span class="skill-chip">VS Code</span>
+                <span class="skill-chip">Figma UI Design</span>
+            </div>
+          </div>
+        </div>
+        </section>
+              
+    <!-- Contact Me Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+        <div class="section-header">
+             <h2 class="section-title">Contact Me</h2>
+                 <p class="section-subtitle">Seeking for industrial training placement starting Feb 2027</p>
+                <p>Get in touch for professional opportunities, collaborations, or inquiries.</p>
+        </div>
+
+        <div class="contact-grid">
+        <!-- Left Column: Details & Social Links -->
+        <div class="contact-info">
+        <div class="info-cards">
+          <!-- Clickable Address linking directly to Google Maps -->
+          <a href="https://www.google.com/maps/search/?api=1&query=No.+7,+Taman+Empire+Height,+94700+Serian,+Sarawak" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="info-card">
+            <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="info-details">
+              <label>Address</label>
+              <span>No. 7, Taman Empire Height, 94700 Serian, Sarawak</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square" style="color: var(--text-muted); font-size: 0.85rem;"></i>
+          </a>
+
+          <!-- Email Link -->
+          <a href="mailto:nurnasiranaser@gmail.com" class="info-card">
+            <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+            <div class="info-details">
+              <label>Email</label>
+              <span>nurnasiranaser@gmail.com</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square" style="color: var(--text-muted); font-size: 0.85rem;"></i>
+          </a>
+
+          <!-- Phone Link -->
+          <a href="tel:01151790191" class="info-card">
+            <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+            <div class="info-details">
+              <label>Phone</label>
+              <span>011-5179 0191</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square" style="color: var(--text-muted); font-size: 0.85rem;"></i>
+          </a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/nurnasira" target="_blank" rel="noopener noreferrer" class="social-btn">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/nasiranaser" target="_blank" rel="noopener noreferrer" class="social-btn">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Form -->
+      <div class="contact-form-card">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <div class="input-wrapper">
+              <input type="text" id="name" class="form-control" placeholder="e.g. John Doe" required />
+              <i class="fa-regular fa-user"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <div class="input-wrapper">
+              <input type="email" id="email" class="form-control" placeholder="e.g. john@example.com" required />
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <div class="input-wrapper textarea-icon">
+              <textarea id="message" class="form-control" placeholder="Type your message here..." required></textarea>
+              <i class="fa-regular fa-comment"></i>
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn" id="submitBtn">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+        </div>
+        </div>
+        </div>
+
+        <div class="toast" id="toast">Message sent successfully!</div>
+    </section>
+
+    <script>
+    // Copy address click interaction
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text);
+      showToast('Address copied to clipboard!');
+    }
+
+    // Submit interaction trigger animation
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      
+      btn.disabled = true;
+      btn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> Sending...`;
+
+      setTimeout(() => {
+        btn.innerHTML = `<span>Sent!</span> <i class="fa-solid fa-check"></i>`;
+        btn.style.background = '#10b981';
+        showToast('Thank you! Your message has been sent.');
+        this.reset();
+
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.innerHTML = `<span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>`;
+          btn.style.background = 'var(--primary-color)';
+        }, 3000);
+      }, 1200);
+    });
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.innerText = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+    </script>
     </section>
 
     <!-- Footer -->
